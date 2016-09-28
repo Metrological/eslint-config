@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "Configuration files for ESLint",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metrological/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Jasper Vermeulen, Thom van Ledden",
+  "license": "ISC",
+  "homepage": "https://github.com/Metrological/eslint-config"
+}
