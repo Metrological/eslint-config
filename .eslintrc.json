@@ -1,6 +1,14 @@
 {
     "rules": {
-        "semi": ["error", "always"],
-        "quotes": ["error", "double"]
+        "no-cond-assign": ["warn", "always"],
+        "no-console": ["off", "always"],
+        "no-constant-condition": "error",
+        "no-control-regex": "error",
+        "no-debugger": "error",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty-character-class": "error",
+        "no-empty": ["error", {"allowEmptyCatch":true}],
     }
 }
