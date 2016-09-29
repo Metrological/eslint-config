@@ -7,6 +7,7 @@ TODO:
 - update maf package.json version to proper version
 - test maf.js with linter as well, before release to internal
 - ESLint shared config and use .js file instead of .json - also requires renameing the repo!!!
+  https://github.com/google/eslint-config-google/blob/master/index.js
 - update package.json author part
 - add editor instructions: sublime, webstorm, vsc
 - update sdk docs - readme + website, to refer to these new rules
