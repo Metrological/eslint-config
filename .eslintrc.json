@@ -1,7 +1,22 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "script",
+    "ecmaFeatures": {
+      "globalReturn": false,
+      "impliedStrict": false,
+      "jsx": false,
+      "experimentalObjectRestSpread": false
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "shared-node-browser": true
+  },
   "rules": {
     "no-cond-assign": [ "warn", "always" ],
-    "no-console": [ "off", "always" ],
+    "no-console": "off",
     "no-constant-condition": "error",
     "no-control-regex": "error",
     "no-debugger": "error",
@@ -12,10 +27,10 @@
     "no-empty": [ "error", { "allowEmptyCatch": true } ],
     "no-ex-assign": "error",
     "no-extra-boolean-cast": "error",
-    "no-extra-parens": "",
+    "no-extra-parens": "off", // TODO:
     "no-extra-semi": "error",
     "no-func-assign": "error",
-    "no-inner-declarations": [ "error", "both" ]
+    "no-inner-declarations": [ "error", "both" ],
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": [ "error", { "skipStrings": true, "skipComments": true } ],
     "no-obj-calls": "error",
@@ -29,5 +44,31 @@
     "use-isnan": "error",
     "valid-jsdoc": "off",
     "valid-typeof": [ "error", { "requireStringLiterals": true } ],
+    // TODO: best practices
+    "strict": [ "error", "never" ],
+    "init-declarations": [ "error", "always" ],
+    "no-catch-shadow": "off",
+    "no-delete-var": "error",
+    "no-label-var": "error",
+    "no-restricted-globals": "off",
+    "no-shadow-restricted-names": "error",
+    "no-shadow": "off", // TODO:
+    "no-undef-init": "error",
+    "no-undef": "off", // TODO:
+    "no-undefined": "error",
+    "no-unused-vars": [ "error", { "caughtErrors": "none" } ],
+    "no-use-before-define": "error",
+    "callback-return": [ "error", [ "callback", "cb", "next", "done" ] ],
+    "global-require": "error",
+    "handle-callback-err": [ "error", "^.*(e|E)rr" ],
+    "no-mixed-requires": "error",
+    "no-new-require": "error",
+    "no-path-concat": "error",
+    "no-process-env": "error",
+    "no-process-exit": "error",
+    "no-restricted-modules": "off",
+    "no-sync": "warn"
+    // TODO: stylistic issues
+    // TODO: ecmascript 6
   }
 }
