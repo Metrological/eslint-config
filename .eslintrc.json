@@ -87,8 +87,8 @@
     "no-lone-blocks": "error",
     "no-loop-func": "error",
     "no-magic-numbers": [ "error", {
-      "ignore": [ 1 ],
-      "ingoreArrayIndexes": true
+      "ignore": [ 0, 1, 2 ],
+      "ignoreArrayIndexes": true
     } ],
     "no-multi-spaces": [ "error", {
       "exceptions": {
@@ -157,7 +157,7 @@
     "no-process-env": "error",
     "no-process-exit": "error",
     "no-restricted-modules": "off",
-    "no-sync": "warn"
+    "no-sync": "warn",
 
     // Stylistic Issues TODO: figure this out later with the team
     "array-bracket-spacing": "off",
@@ -271,6 +271,6 @@
     "sort-imports": "off",
     "symbol-description": "off",
     "template-curly-spacing": "off",
-    "yield-star-spacing": "off",
+    "yield-star-spacing": "off"
   }
 }
