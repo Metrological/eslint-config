@@ -29,7 +29,7 @@
     "no-empty": [ "error", { "allowEmptyCatch": true } ],
     "no-ex-assign": "error",
     "no-extra-boolean-cast": "error",
-    "no-extra-parens": "off", // TODO:
+    "no-extra-parens": "error", // TODO: should be warning???
     "no-extra-semi": "error",
     "no-func-assign": "error",
     "no-inner-declarations": [ "error", "both" ],
@@ -53,7 +53,7 @@
     // Best Practices
     "accessor-pairs": "error",
     "array-callback-return": "error",
-    "block-scoped-var": "off", // TODO:
+    "block-scoped-var": "off",  // TODO: should be warning??? or off if too much effort...
     "class-methods-use-this": "error",
     "complexity": [ "error", { "max": 5 } ],
     "consistent-return": "error",
@@ -62,7 +62,7 @@
     "dot-location": [ "error", "property" ],
     "dot-notation": "error",
     "eqeqeq": [ "error", "smart" ],
-    "guard-for-in": "off", // TODO:
+    "guard-for-in": "error",
     "no-alert": "error",
     "no-caller": "error",
     "no-case-declarations": "error",
@@ -78,7 +78,7 @@
     "no-fallthrough": "off",
     "no-floating-decimal": "error",
     "no-global-assign": "error",
-    "no-implicit-coercion": "off", // TODO:
+    "no-implicit-coercion": "off",
     "no-implicit-globals": "error",
     "no-implied-eval": "error",
     "no-invalid-this": "error",
@@ -114,7 +114,7 @@
     "no-sequences": "error",
     "no-throw-literal": "error",
     "no-unmodified-loop-condition": "error",
-    "no-unused-expressions": "off", // TODO:
+    "no-unused-expressions": [ "error", { "allowShortCircuit": true, "allowTernary": true } ],
     "no-unused-labels": "error",
     "no-useless-call": "error",
     "no-useless-concat": "error",
@@ -126,9 +126,9 @@
     } ],
     "no-with": "error",
     "radix": "error",
-    "vars-on-top": "off", // TODO:
+    "vars-on-top": "off", // TODO: should be warning??? or off if too much effort...
     "wrap-iife": "off",
-    "yoda": "off", // TODO:
+    "yoda": "off",
 
     // Strict Mode
     "strict": [ "error", "never" ],
@@ -140,9 +140,9 @@
     "no-label-var": "error",
     "no-restricted-globals": "off",
     "no-shadow-restricted-names": "error",
-    "no-shadow": "off", // TODO:
+    "no-shadow": "error", // TODO: should be warning??? or off if too much effort...
     "no-undef-init": "error",
-    "no-undef": "off", // TODO:
+    "no-undef": "error",
     "no-undefined": "error",
     "no-unused-vars": [ "error", { "caughtErrors": "none" } ],
     "no-use-before-define": "error",
