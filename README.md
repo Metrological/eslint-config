@@ -1,8 +1,8 @@
-# eslint-config
+# eslint-config-metrological
 Configuration files for ESLint
 
 TODO:
-- ESLint shared config and use .js file instead of .json - also requires renameing the repo!!!
+- ESLint shared config requires renameing the repo!!!
   https://github.com/google/eslint-config-google/blob/master/index.js
 - test maf.js with linter as well, before release to internal
 - run script on apps dir to test output
