@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config",
-  "version": "1.2.2",
+  "name": "eslint-config-metrological",
+  "version": "1.2.3",
   "description": "Configuration files for ESLint",
   "keywords": [ "eslint", "config", "eslintconfig", "metrological" ],
   "homepage": "https://github.com/Metrological/eslint-config",
