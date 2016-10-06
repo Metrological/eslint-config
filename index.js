@@ -128,7 +128,7 @@ module.exports = {
   , 'no-useless-concat': ERROR
   , 'no-useless-escape': ERROR
   , 'no-void': ERROR
-  , 'no-WARNing-comments': [ WARN, {
+  , 'no-warning-comments': [ WARN, {
       terms: [ 'todo', 'TODO', 'fix', 'FIX', 'fixme', 'FIXME' ]
     , location: 'anywhere'
     } ]
