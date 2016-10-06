@@ -10,10 +10,10 @@ To use this from you IDE:
 - TextMate: https://github.com/natesilva/javascript-eslint.tmbundle
 
 ## TODO:
-- [] test maf.js with linter as well, before release to internal
-- [] run script on apps dir to test output
-- [] release to internal teams via flowdock (& mail???) met mooi verhaaltje
-- [] own rules;
-  - [] typeOf - but only in maf repo -> so that extends this default config
-  - [] (un)subscribe - but only in maf repo -> so that extends this default config
-- [] incorporate in dashboard/release server
+- [ ] test maf.js with linter as well, before release to internal
+- [ ] run script on apps dir to test output
+- [ ] release to internal teams via flowdock (& mail???) met mooi verhaaltje
+- [ ] own rules;
+  - [ ] typeOf - but only in maf repo -> so that extends this default config
+  - [ ] (un)subscribe - but only in maf repo -> so that extends this default config
+- [ ] incorporate in dashboard/release server
