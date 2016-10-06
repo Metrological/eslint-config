@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-metrological",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Configuration files for ESLint",
   "keywords": [ "eslint", "config", "eslintconfig", "metrological" ],
   "homepage": "https://github.com/Metrological/eslint-config",
@@ -12,7 +12,7 @@
   }, {
     "name": "Thom van Ledden",
     "email": "t.van.ledden@metrological.com",
-    "url": "https://github.com/Thomvl"
+    "url": "https://git.io/thomvl"
   } ],
   "main": "index.js",
   "repository": {
