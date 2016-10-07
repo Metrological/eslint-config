@@ -34,7 +34,7 @@ module.exports = {
   , 'no-empty': [ ERROR, { allowEmptyCatch: true } ]
   , 'no-ex-assign': ERROR
   , 'no-extra-boolean-cast': ERROR
-  , 'no-extra-parens': ERROR // TODO: should be WARNing???
+  , 'no-extra-parens': [ ERROR, 'functions' ]
   , 'no-extra-semi': ERROR
   , 'no-func-assign': ERROR
   , 'no-inner-declarations': [ ERROR, 'both' ]
@@ -58,14 +58,14 @@ module.exports = {
   // Best Practices
   , 'accessor-pairs': ERROR
   , 'array-callback-return': ERROR
-  , 'block-scoped-var': OFF // TODO: should be WARNing??? or OFF if too much effort...
+  , 'block-scoped-var': ERROR // TODO: should be warning??? or OFF if too much effort...
   , 'class-methods-use-this': ERROR
   , complexity: [ WARN, { max: 5 } ]
   , 'consistent-return': ERROR
   , curly: OFF // TODO: for now it is off, re-enable and discuss with style rules
   , 'default-case': OFF
   , 'dot-location': [ ERROR, 'property' ]
-  , 'dot-notation': ERROR
+  , 'dot-notation': OFF // TODO: off for now, re-enable when discussing style
   , eqeqeq: [ ERROR, 'smart' ]
   , 'guard-for-in': ERROR
   , 'no-alert': ERROR
@@ -131,7 +131,7 @@ module.exports = {
     } ]
   , 'no-with': ERROR
   , radix: ERROR
-  , 'vars-on-top': OFF // TODO: should be WARNing??? or OFF if too much effort...
+  , 'vars-on-top': ERROR // TODO: should be warning??? or OFF if too much effort...
   , 'wrap-iife': OFF
   , yoda: OFF
 
