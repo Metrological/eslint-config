@@ -10,12 +10,15 @@ To use this from your IDE:
 - TextMate: https://github.com/natesilva/javascript-eslint.tmbundle
 
 ## TODO:
-- [ ] test maf.js with linter as well, before release to internal
-- [ ] run script on apps dir to test output
+- [x] test maf.js with linter as well, before release to internal
+- [x] run script on apps dir to test output
 - [ ] ignore maf + ui's + sdk, etc... for now, but discuss with Albert how to handle
+- [ ] run script to determine most made errors
 - [ ] run lint only on complete app file, to prevent undefined errors? requires source mapping!
 - [ ] release to internal teams via flowdock (& mail???) met mooi verhaaltje
+- [ ] release to public maf-sdk
+- [ ] incorporate in dashboard/release server
 - [ ] own rules;
   - typeOf - but only in maf repo -> so that extends this default config
   - (un)subscribe - but only in maf repo -> so that extends this default config
-- [ ] incorporate in dashboard/release server
+  - geen maf scope functies in function die in global scope is gedefineerd, e.g. zonder var/ als statement
