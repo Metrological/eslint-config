@@ -60,9 +60,9 @@ module.exports = {
   , 'array-callback-return': ERROR
   , 'block-scoped-var': OFF // TODO: should be WARNing??? or OFF if too much effort...
   , 'class-methods-use-this': ERROR
-  , complexity: [ ERROR, { max: 5 } ]
+  , complexity: [ WARN, { max: 5 } ]
   , 'consistent-return': ERROR
-  , curly: [ ERROR, 'multi-line', 'consistent' ]
+  , curly: OFF // TODO: for now it is off, re-enable and discuss with style rules
   , 'default-case': OFF
   , 'dot-location': [ ERROR, 'property' ]
   , 'dot-notation': ERROR
@@ -84,17 +84,14 @@ module.exports = {
   , 'no-floating-decimal': ERROR
   , 'no-global-assign': ERROR
   , 'no-implicit-coercion': OFF
-  , 'no-implicit-globals': ERROR
+  , 'no-implicit-globals': OFF
   , 'no-implied-eval': ERROR
   , 'no-invalid-this': ERROR
   , 'no-iterator': ERROR
   , 'no-labels': ERROR
   , 'no-lone-blocks': ERROR
   , 'no-loop-func': ERROR
-  , 'no-magic-numbers': [ ERROR, {
-      ignore: [ 0, 1, 2 ],
-      ignoreArrayIndexes: true
-    } ]
+  , 'no-magic-numbers': OFF
   , 'no-multi-spaces': [ ERROR, {
       exceptions: {
         Property: true,
@@ -148,7 +145,7 @@ module.exports = {
   , 'no-label-var': ERROR
   , 'no-restricted-globals': OFF
   , 'no-shadow-restricted-names': ERROR
-  , 'no-shadow': ERROR // TODO: should be WARNing??? or OFF if too much effort...
+  , 'no-shadow': WARN
   , 'no-undef-init': ERROR
   , 'no-undef': ERROR
   , 'no-undefined': ERROR
