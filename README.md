@@ -12,6 +12,8 @@ To use this from your IDE:
 ## TODO:
 - [ ] test maf.js with linter as well, before release to internal
 - [ ] run script on apps dir to test output
+- [ ] ignore maf + ui's + sdk, etc... for now, but discuss with Albert how to handle
+- [ ] run lint only on complete app file, to prevent undefined errors? requires source mapping!
 - [ ] release to internal teams via flowdock (& mail???) met mooi verhaaltje
 - [ ] own rules;
   - typeOf - but only in maf repo -> so that extends this default config
