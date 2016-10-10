@@ -18,7 +18,9 @@ To use this from your IDE:
 - [ ] release to internal teams via flowdock (& mail???) met mooi verhaaltje
 - [ ] release to public maf-sdk
 - [ ] incorporate in dashboard/release server
+- [ ] make console logger maf into plugin formatter for eslint, with sourcemap support
 - [ ] own rules;
   - typeOf - but only in maf repo -> so that extends this default config
+  - don't extend/overwrite/append to MAF namespace/components
   - (un)subscribe - but only in maf repo -> so that extends this default config
   - geen maf scope functies in function die in global scope is gedefineerd, e.g. zonder var/ als statement
