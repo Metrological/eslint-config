@@ -12,7 +12,7 @@ To use this from your IDE:
 ## TODO:
 - [x] test maf.js with linter as well, before release to internal
 - [x] run script on apps dir to test output
-- [ ] ignore maf + ui's + sdk, etc... for now, but discuss with Albert how to handle
+- [/] ignore maf + ui's + sdk, etc... for now, but discuss with Albert how to handle
 - [ ] run script to determine most made errors
 - [ ] run lint only on complete app file, to prevent undefined errors? requires source mapping!
 - [ ] release to internal teams via flowdock (& mail???) met mooi verhaaltje
