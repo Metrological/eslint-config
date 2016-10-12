@@ -13,14 +13,18 @@ To use this from your IDE:
 - [x] test maf.js with linter as well, before release to internal
 - [x] run script on apps dir to test output
 - [/] ignore maf + ui's + sdk, etc... for now, but discuss with Albert how to handle
-- [ ] run script to determine most made errors
+- [ ] ignore iframe apps
 - [ ] run lint only on complete app file, to prevent undefined errors? requires source mapping!
+- [x] run script to determine most made errors
+- [ ] fix stripcomments to not remove eslint comments...
 - [ ] release to internal teams via flowdock (& mail???) met mooi verhaaltje
 - [ ] release to public maf-sdk
 - [ ] incorporate in dashboard/release server
+- [ ] provide shortcut urls to all rule definitions for ESLint
 - [ ] make console logger maf into plugin formatter for eslint, with sourcemap support
 - [ ] own rules;
   - typeOf - but only in maf repo -> so that extends this default config
   - don't extend/overwrite/append to MAF namespace/components
   - (un)subscribe - but only in maf repo -> so that extends this default config
   - geen maf scope functies in function die in global scope is gedefineerd, e.g. zonder var/ als statement
+  - provide shortcut urls to MAF docs for rule explainations
