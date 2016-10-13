@@ -22,6 +22,7 @@ To use this from your IDE:
 - [ ] incorporate in dashboard/release server
 - [ ] provide shortcut urls to all rule definitions for ESLint
 - [ ] make console logger maf into plugin formatter for eslint, with sourcemap support
+- [ ] add bin file/link for easy starting sdk
 - [ ] own rules;
   - typeOf - but only in maf repo -> so that extends this default config
   - don't extend/overwrite/append to MAF namespace/components
