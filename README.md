@@ -24,6 +24,7 @@ To use this from your IDE:
 - [ ] provide shortcut urls to all rule definitions for ESLint
 - [ ] make console logger maf into plugin formatter for eslint, with sourcemap support
 - [ ] add bin file/link for easy starting sdk
+- [ ] make console output linkable via chrome dev tools workspaces
 - [ ] release to public maf-sdk
 - [ ] incorporate in dashboard/release server
 - [ ] own rules;
