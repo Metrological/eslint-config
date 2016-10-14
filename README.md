@@ -20,14 +20,15 @@ To use this from your IDE:
 - [ ] fix TODO's in SDK code
 - [ ] ignore iframe apps
 - [ ] fix stripcomments to not remove eslint comments...
-- [ ] add dependency indicators: david-dm, etc...
 - [ ] provide shortcut urls to all rule definitions for ESLint
 - [ ] make console logger maf into plugin formatter for eslint, with sourcemap support
 - [ ] add bin file/link for easy starting sdk
 - [ ] make console output linkable via chrome dev tools workspaces
 - [ ] release to public maf-sdk
+- [ ] add dependency indicators: david-dm, etc... for public sdk + config
 - [ ] incorporate in dashboard/release server
 - [ ] own rules;
+  - in separate repo so maf extends two others
   - typeOf - but only in maf repo -> so that extends this default config
   - don't extend/overwrite/append to MAF namespace/components
   - (un)subscribe - but only in maf repo -> so that extends this default config
