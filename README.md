@@ -16,17 +16,28 @@ To use this from your IDE:
 - [x] run lint only on complete app file, to prevent undefined errors? requires source mapping!
 - [x] run script to determine most made errors
 - [ ] release to internal teams via flowdock (& mail???) met mooi verhaaltje
-- [ ] make formatting of console output better
 - [ ] fix TODO's in SDK code
-- [ ] ignore iframe apps
+- [x] ignore iframe apps
 - [ ] fix stripcomments to not remove eslint comments...
 - [ ] provide shortcut urls to all rule definitions for ESLint
-- [ ] make console logger maf into plugin formatter for eslint, with sourcemap support
-- [ ] add bin file/link for easy starting sdk
+- [ ] make console logger maf into plugin formatter for eslint
+- [ ] make formatting of console output better
+- [x] add bin file/link for easy starting sdk
 - [ ] make console output linkable via chrome dev tools workspaces
 - [ ] release to public maf-sdk
-- [ ] add dependency indicators: david-dm, etc... for public sdk + config
+- [ ] add dependency indicators: david-dm, etc... for public sdk + config; https://greenkeeper.io/ https://npm-stat.com/charts.html?package=eslint-find-rules&from=2015-08-01
+- [ ] add badges; https://shields.io/; https://github.com/sarbbottam/eslint-find-rules
 - [ ] incorporate in dashboard/release server
+- [ ] more rules/plugins;
+  - azeemba/eslint-plugin-json
+  - sindresorhus/eslint-plugin-unicorn
+  - Trott/eslint-plugin-new-with-error
+  - johnstonbl01/eslint-no-inferred-method-name
+  - buildo/eslint-plugin-no-loops
+  - dustinspecker/eslint-plugin-no-use-extend-native
+  - selaux/eslint-plugin-filenames
+  - alex-shnayder/eslint-plugin-no-empty-blocks
+  - sarbbottam/eslint-find-rules
 - [ ] own rules;
   - in separate repo so maf extends two others
   - typeOf - but only in maf repo -> so that extends this default config
