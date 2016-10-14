@@ -126,12 +126,12 @@ module.exports = {
   , 'no-useless-escape': ERROR
   , 'no-void': ERROR
   , 'no-warning-comments': [ WARN, {
-      terms: [ 'todo', 'TODO', 'fix', 'FIX', 'fixme', 'FIXME' ]
+      terms: [ 'TODO', 'FIX', 'FIXME', 'TEMP' ]
     , location: 'anywhere'
     } ]
   , 'no-with': ERROR
   , radix: ERROR
-  , 'vars-on-top': ERROR // TODO: should be warning??? or OFF if too much effort...
+  , 'vars-on-top': OFF
   , 'wrap-iife': OFF
   , yoda: OFF
 
