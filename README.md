@@ -26,7 +26,7 @@ To use this from your IDE:
 - [ ] make console output linkable via chrome dev tools workspaces - fix console mapping in maf?
 - [ ] release to public maf-sdk
 - [ ] publish this config to NPM and update other repo
-- [ ] add dependency indicators: david-dm, etc... for public sdk + config; https://greenkeeper.io/ https://npm-stat.com/ charts.html?package=eslint-find-rules&from=2015-08-01 https://nodei.co/npm/semantic-release/ (image)
+- [ ] add dependency indicators: david-dm, etc... for public sdk + config; https://greenkeeper.io/ https://npm-stat.com/ charts.html?package=eslint-find-rules&from=2015-08-01 https://nodei.co/npm/semantic-release/ (image) https://www.sourceclear.com/
 - [ ] add badges; https://shields.io/; https://github.com/sarbbottam/eslint-find-rules
 - [ ] verify if we can implement https://github.com/semantic-release/semantic-release
 - [ ] incorporate in dashboard/release server
