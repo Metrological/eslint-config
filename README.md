@@ -23,7 +23,7 @@ To use this from your IDE:
 - [ ] make console logger maf into plugin formatter for eslint
 - [ ] make formatting of console output better
 - [x] add bin file/link for easy starting sdk
-- [ ] make console output linkable via chrome dev tools workspaces
+- [ ] make console output linkable via chrome dev tools workspaces - fix console mapping in maf?
 - [ ] release to public maf-sdk
 - [ ] add dependency indicators: david-dm, etc... for public sdk + config; https://greenkeeper.io/ https://npm-stat.com/charts.html?package=eslint-find-rules&from=2015-08-01
 - [ ] add badges; https://shields.io/; https://github.com/sarbbottam/eslint-find-rules
