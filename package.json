@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-metrological",
-  "version": "1.2.10",
+  "version": "1.3.10",
   "description": "Configuration files for ESLint",
   "keywords": [
     "eslint",
@@ -8,7 +8,7 @@
     "eslintconfig",
     "metrological"
   ],
-  "homepage": "https://github.com/Metrological/eslint-config",
+  "homepage": "https://git.io/eslint-config-metrological",
   "license": "ISC",
   "contributors": [
     {
@@ -25,7 +25,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "Metrological/eslint-config"
+    "url": "Metrological/eslint-config-metrological"
   },
   "peerDependencies": {
     "eslint": "3.6.x"
