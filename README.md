@@ -1,7 +1,5 @@
-# eslint-config-metrological
+# [ESLint Config Metrological](https://git.io/eslint-config-metrological "ESLint Config Metrological")
 Configuration files for ESLint
-
-[ESLint Config Metrological](git.io/eslint-config-metrological "ESLint Config Metrological")
 
 To use this from your IDE:
 - Sublime Text: https://packagecontrol.io/packages/ESLint
