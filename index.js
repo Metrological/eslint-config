@@ -22,7 +22,7 @@ module.exports = {
 , rules: {
 
   // Possible Errors
-    'no-cond-assign': [ WARN, ALWAYS ]
+    'no-cond-assign': ERROR
   , 'no-console': OFF
   , 'no-constant-condition': ERROR
   , 'no-control-regex': ERROR
@@ -58,9 +58,9 @@ module.exports = {
   // Best Practices
   , 'accessor-pairs': ERROR
   , 'array-callback-return': ERROR
-  , 'block-scoped-var': ERROR // TODO: should be warning??? or OFF if too much effort...
+  , 'block-scoped-var': ERROR
   , 'class-methods-use-this': ERROR
-  , complexity: [ WARN, { max: 5 } ]
+  , complexity: [ WARN, { max: 20 } ]
   , 'consistent-return': ERROR
   , curly: OFF // TODO: for now it is off, re-enable and discuss with style rules
   , 'default-case': OFF
@@ -92,7 +92,7 @@ module.exports = {
   , 'no-lone-blocks': ERROR
   , 'no-loop-func': ERROR
   , 'no-magic-numbers': OFF
-  , 'no-multi-spaces': [ ERROR, {
+  , 'no-multi-spaces': [ OFF, { // TODO: off for now, re-consider when discussing style
       exceptions: {
         Property: true,
         VariableDeclarator: true,
@@ -109,7 +109,7 @@ module.exports = {
   , 'no-proto': ERROR
   , 'no-redeclare': ERROR
   , 'no-restricted-properties': OFF
-  , 'no-return-assign': ERROR
+  , 'no-return-assign': OFF
   , 'no-script-url': ERROR
   , 'no-self-assign': [ ERROR, { props: true } ]
   , 'no-self-compare': ERROR
@@ -139,7 +139,7 @@ module.exports = {
   , strict: [ ERROR, 'never' ]
 
   // Variables
-  , 'init-declarations': [ ERROR, ALWAYS ]
+  , 'init-declarations': OFF // TODO: opnieuw ter discussie als over style/coding guidelines - alleen intern.
   , 'no-catch-shadow': OFF
   , 'no-delete-var': ERROR
   , 'no-label-var': ERROR
