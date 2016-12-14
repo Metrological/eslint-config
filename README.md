@@ -1,3 +1,6 @@
+![dependencies](https://david-dm.org/metrological/eslint-config-metrological.svg)
+
+
 # [ESLint Config Metrological](https://git.io/eslint-config-metrological "ESLint Config Metrological")
 Configuration files for ESLint
 
