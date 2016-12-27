@@ -22,7 +22,8 @@ module.exports = {
 , rules: {
 
   // Possible Errors
-    'no-cond-assign': ERROR
+    'no-await-in-loop': OFF // TBD
+  , 'no-cond-assign': ERROR
   , 'no-console': OFF // TBD
   , 'no-constant-condition': [ ERROR, { checkLoops: true } ]
   , 'no-control-regex': OFF
@@ -110,6 +111,7 @@ module.exports = {
   , 'no-redeclare': ERROR
   , 'no-restricted-properties': OFF // TBD
   , 'no-return-assign': ERROR
+  , 'no-return-await': OFF // TBD
   , 'no-script-url': ERROR
   , 'no-self-assign': [ ERROR, { props: true } ]
   , 'no-self-compare': ERROR
@@ -124,6 +126,7 @@ module.exports = {
   , 'no-useless-call': ERROR
   , 'no-useless-concat': ERROR
   , 'no-useless-escape': OFF
+  , 'no-useless-return': OFF // TBD
   , 'no-void': OFF
   , 'no-warning-comments': [ WARN, {
       terms: [ 'TODO', 'FIX', 'FIXME', 'TEMP' ]
@@ -131,6 +134,7 @@ module.exports = {
     } ]
   , 'no-with': ERROR // TBD
   , radix: OFF
+  , 'require-await': OFF // TBD
   , 'vars-on-top': OFF // TBD
   , 'wrap-iife': OFF // TBD
   , yoda: OFF // TBD
@@ -169,6 +173,7 @@ module.exports = {
   , 'block-spacing': OFF // TBD
   , 'brace-style': OFF // TBD
   , camelcase: OFF // TBD
+  , 'capitalized-comments': OFF // TBD
   , 'comma-dangle': ERROR
   , 'comma-spacing': OFF // TBD
   , 'comma-style': OFF // TBD
@@ -177,6 +182,7 @@ module.exports = {
   , 'eol-last': OFF // TBD
   , 'func-call-spacing': OFF // TBD
   , 'func-names': OFF // TBD
+  , 'func-name-matching': OFF // TBD
   , 'func-style': OFF // TBD
   , 'id-blacklist': OFF // TBD
   , 'id-length': OFF // TBD
