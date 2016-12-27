@@ -5,277 +5,277 @@ const ALWAYS = 'always'
 
 module.exports = {
   parserOptions: {
-    ecmaVersion: 5
-  , sourceType: 'script'
+    ecmaVersion: 5 // TBD
+  , sourceType: 'script' // TBD
   , ecmaFeatures: {
-      globalReturn: false
-    , impliedStrict: false
+      globalReturn: false // TBD
+    , impliedStrict: false // TBD
     , jsx: false
-    , experimentalObjectRestSpread: false
+    , experimentalObjectRestSpread: false // TBD
     }
   }
 , env: {
-    browser: true
-  , node: true
-  , 'shared-node-browser': true
+    browser: true // TBD
+  , node: true // TBD
+  , 'shared-node-browser': true // TBD
   }
 , rules: {
 
   // Possible Errors
     'no-cond-assign': ERROR
-  , 'no-console': OFF
-  , 'no-constant-condition': ERROR
-  , 'no-control-regex': ERROR
-  , 'no-debugger': ERROR
-  , 'no-dupe-args': ERROR
+  , 'no-console': OFF // TBD
+  , 'no-constant-condition': [ ERROR, { checkLoops: true } ]
+  , 'no-control-regex': OFF
+  , 'no-debugger': ERROR // TBD
+  , 'no-dupe-args': ERROR // TBD
   , 'no-dupe-keys': ERROR
   , 'no-duplicate-case': ERROR
-  , 'no-empty-character-class': ERROR
+  , 'no-empty-character-class': ERROR // TBD
   , 'no-empty': [ ERROR, { allowEmptyCatch: true } ]
-  , 'no-ex-assign': ERROR
-  , 'no-extra-boolean-cast': ERROR
-  , 'no-extra-parens': [ ERROR, 'functions' ]
+  , 'no-ex-assign': ERROR // TBD
+  , 'no-extra-boolean-cast': WARN
+  , 'no-extra-parens': OFF
   , 'no-extra-semi': ERROR
-  , 'no-func-assign': ERROR
-  , 'no-inner-declarations': [ ERROR, 'both' ]
-  , 'no-invalid-regexp': ERROR
+  , 'no-func-assign': ERROR // TBD
+  , 'no-inner-declarations': [ WARN, 'both' ]
+  , 'no-invalid-regexp': ERROR // TBD
   , 'no-irregular-whitespace': [ ERROR, {
       skipStrings: true
     , skipComments: true
-    } ]
-  , 'no-obj-calls': ERROR
-  , 'no-prototype-builtins': ERROR
-  , 'no-regex-spaces': ERROR
-  , 'no-sparse-arrays': ERROR
-  , 'no-unexpected-multiline': ERROR
+    } ] // TBD
+  , 'no-obj-calls': ERROR // TBD
+  , 'no-prototype-builtins': OFF
+  , 'no-regex-spaces': ERROR // TBD
+  , 'no-sparse-arrays': ERROR // TBD
+  , 'no-unexpected-multiline': WARN
   , 'no-unreachable': ERROR
-  , 'no-unsafe-finally': ERROR
-  , 'no-unsafe-negation': ERROR
-  , 'use-isnan': ERROR
-  , 'valid-jsdoc': OFF
-  , 'valid-typeof': [ ERROR, { requireStringLiterals: true } ]
+  , 'no-unsafe-finally': ERROR // TBD
+  , 'no-unsafe-negation': ERROR // TBD
+  , 'use-isnan': ERROR // TBD
+  , 'valid-jsdoc': OFF // TBD
+  , 'valid-typeof': [ WARN, { requireStringLiterals: true } ]
 
   // Best Practices
-  , 'accessor-pairs': ERROR
+  , 'accessor-pairs': ERROR // TBD
   , 'array-callback-return': ERROR
-  , 'block-scoped-var': ERROR
-  , 'class-methods-use-this': ERROR
+  , 'block-scoped-var': OFF
+  , 'class-methods-use-this': ERROR // TBD
   , complexity: [ WARN, { max: 20 } ]
-  , 'consistent-return': ERROR
-  , curly: OFF // TODO: for now it is off, re-enable and discuss with style rules
-  , 'default-case': OFF
-  , 'dot-location': [ ERROR, 'property' ]
-  , 'dot-notation': OFF // TODO: off for now, re-enable when discussing style
+  , 'consistent-return': OFF
+  , curly: OFF // TBD
+  , 'default-case': OFF // TBD
+  , 'dot-location': OFF
+  , 'dot-notation': OFF // TBD
   , eqeqeq: [ ERROR, 'smart' ]
-  , 'guard-for-in': ERROR
-  , 'no-alert': ERROR
+  , 'guard-for-in': WARN
+  , 'no-alert': OFF
   , 'no-caller': ERROR
-  , 'no-case-declarations': ERROR
-  , 'no-div-regex': ERROR
-  , 'no-else-return': ERROR
+  , 'no-case-declarations': ERROR // TBD
+  , 'no-div-regex': ERROR // TBD
+  , 'no-else-return': OFF
   , 'no-empty-function': ERROR
-  , 'no-empty-pattern': ERROR
-  , 'no-eq-null': ERROR
-  , 'no-eval': ERROR
+  , 'no-empty-pattern': ERROR // TBD
+  , 'no-eq-null': OFF
+  , 'no-eval': ERROR // TBD
   , 'no-extend-native': ERROR
   , 'no-extra-bind': ERROR
   , 'no-extra-label': ERROR
-  , 'no-fallthrough': OFF
-  , 'no-floating-decimal': ERROR
-  , 'no-global-assign': ERROR
-  , 'no-implicit-coercion': OFF
-  , 'no-implicit-globals': OFF
-  , 'no-implied-eval': ERROR
+  , 'no-fallthrough': OFF // TBD
+  , 'no-floating-decimal': OFF
+  , 'no-global-assign': ERROR // TBD
+  , 'no-implicit-coercion': OFF // TBD
+  , 'no-implicit-globals': OFF // TBD
+  , 'no-implied-eval': ERROR // TBD
   , 'no-invalid-this': ERROR
-  , 'no-iterator': ERROR
+  , 'no-iterator': ERROR // TBD
   , 'no-labels': ERROR
-  , 'no-lone-blocks': ERROR
+  , 'no-lone-blocks': ERROR // TBD
   , 'no-loop-func': ERROR
-  , 'no-magic-numbers': OFF
-  , 'no-multi-spaces': [ OFF, { // TODO: off for now, re-consider when discussing style
+  , 'no-magic-numbers': OFF // TBD
+  , 'no-multi-spaces': [ WARN, {
       exceptions: {
         Property: true,
         VariableDeclarator: true,
         ImportDeclaration: true
       }
-    } ]
-  , 'no-multi-str': ERROR
+    } ] // TBD
+  , 'no-multi-str': ERROR // TBD
   , 'no-new-func': ERROR
-  , 'no-new-wrappers': ERROR
-  , 'no-new': ERROR
-  , 'no-octal-escape': ERROR
-  , 'no-octal': ERROR
-  , 'no-param-reassign': OFF
+  , 'no-new-wrappers': ERROR // TBD
+  , 'no-new': OFF
+  , 'no-octal-escape': ERROR // TBD
+  , 'no-octal': ERROR // TBD
+  , 'no-param-reassign': OFF // TBD
   , 'no-proto': ERROR
   , 'no-redeclare': ERROR
-  , 'no-restricted-properties': OFF
-  , 'no-return-assign': OFF
+  , 'no-restricted-properties': OFF // TBD
+  , 'no-return-assign': ERROR
   , 'no-script-url': ERROR
   , 'no-self-assign': [ ERROR, { props: true } ]
   , 'no-self-compare': ERROR
   , 'no-sequences': ERROR
-  , 'no-throw-literal': ERROR
-  , 'no-unmodified-loop-condition': ERROR
-  , 'no-unused-expressions': [ ERROR, {
+  , 'no-throw-literal': OFF
+  , 'no-unmodified-loop-condition': ERROR // TBD
+  , 'no-unused-expressions': [ WARN, {
       allowShortCircuit: true
     , allowTernary: true
     } ]
-  , 'no-unused-labels': ERROR
+  , 'no-unused-labels': ERROR // TBD
   , 'no-useless-call': ERROR
   , 'no-useless-concat': ERROR
-  , 'no-useless-escape': ERROR
-  , 'no-void': ERROR
+  , 'no-useless-escape': OFF
+  , 'no-void': OFF
   , 'no-warning-comments': [ WARN, {
       terms: [ 'TODO', 'FIX', 'FIXME', 'TEMP' ]
     , location: 'anywhere'
     } ]
-  , 'no-with': ERROR
-  , radix: ERROR
-  , 'vars-on-top': OFF
-  , 'wrap-iife': OFF
-  , yoda: OFF
+  , 'no-with': ERROR // TBD
+  , radix: OFF
+  , 'vars-on-top': OFF // TBD
+  , 'wrap-iife': OFF // TBD
+  , yoda: OFF // TBD
 
   // Strict Mode
   , strict: [ ERROR, 'never' ]
 
   // Variables
-  , 'init-declarations': OFF // TODO: opnieuw ter discussie als over style/coding guidelines - alleen intern.
-  , 'no-catch-shadow': OFF
-  , 'no-delete-var': ERROR
+  , 'init-declarations': OFF
+  , 'no-catch-shadow': OFF // TBD
+  , 'no-delete-var': ERROR // TBD
   , 'no-label-var': ERROR
-  , 'no-restricted-globals': OFF
-  , 'no-shadow-restricted-names': ERROR
+  , 'no-restricted-globals': OFF // TBD
+  , 'no-shadow-restricted-names': ERROR // TBD
   , 'no-shadow': WARN
-  , 'no-undef-init': ERROR
+  , 'no-undef-init': OFF
   , 'no-undef': ERROR
-  , 'no-undefined': ERROR
-  , 'no-unused-vars': [ ERROR, { caughtErrors: 'none' } ]
-  , 'no-use-before-define': ERROR
+  , 'no-undefined': OFF
+  , 'no-unused-vars': WARN
+  , 'no-use-before-define': OFF
 
-  // Node.js and CommonJS
-  , 'callback-return': [ ERROR, [ 'callback', 'cb', 'next', 'done' ] ]
-  , 'global-require': ERROR
-  , 'handle-callback-err': [ ERROR, '^.*(e|E)rr' ]
-  , 'no-mixed-requires': ERROR
-  , 'no-new-require': ERROR
-  , 'no-path-concat': ERROR
-  , 'no-process-env': ERROR
-  , 'no-process-exit': ERROR
-  , 'no-restricted-modules': OFF
-  , 'no-sync': WARN
+  // Node.js and CommonJS, TODO: put this in it's own module
+  , 'callback-return': OFF
+  , 'global-require': ERROR // TBD
+  , 'handle-callback-err': OFF
+  , 'no-mixed-requires': OFF
+  , 'no-new-require': ERROR // TBD
+  , 'no-path-concat': ERROR // TBD
+  , 'no-process-env': OFF
+  , 'no-process-exit': ERROR // TBD
+  , 'no-restricted-modules': OFF // TBD
+  , 'no-sync': OFF
 
   // Stylistic Issues TODO: figure this out later with the team
-  , 'array-bracket-spacing': OFF
-  , 'block-spacing': OFF
-  , 'brace-style': OFF
-  , camelcase: OFF
+  , 'array-bracket-spacing': OFF // TBD
+  , 'block-spacing': OFF // TBD
+  , 'brace-style': OFF // TBD
+  , camelcase: OFF // TBD
   , 'comma-dangle': ERROR
-  , 'comma-spacing': OFF
-  , 'comma-style': OFF
-  , 'computed-property-spacing': OFF
-  , 'consistent-this': OFF
-  , 'eol-last': OFF
-  , 'func-call-spacing': OFF
-  , 'func-names': OFF
-  , 'func-style': OFF
-  , 'id-blacklist': OFF
-  , 'id-length': OFF
-  , 'id-match': OFF
-  , indent: OFF
-  , 'jsx-quotes': OFF
-  , 'key-spacing': OFF
-  , 'keyword-spacing': OFF
-  , 'line-comment-position': OFF
-  , 'linebreak-style': OFF
-  , 'lines-around-comment': OFF
-  , 'lines-around-directive': OFF
-  , 'max-depth': OFF
-  , 'max-len': OFF
-  , 'max-lines': OFF
-  , 'max-nested-callbacks': OFF
-  , 'max-params': OFF
-  , 'max-statements-per-line': OFF
-  , 'max-statements': OFF
-  , 'multiline-ternary': OFF
-  , 'new-cap': OFF
-  , 'new-parens': OFF
-  , 'newline-after-var': OFF
-  , 'newline-before-return': OFF
-  , 'newline-per-chained-call': OFF
-  , 'no-array-constructor': OFF
-  , 'no-bitwise': OFF
-  , 'no-continue': OFF
-  , 'no-inline-comments': OFF
-  , 'no-lonely-if': OFF
-  , 'no-mixed-operators': OFF
-  , 'no-mixed-spaces-and-tabs': OFF
-  , 'no-multiple-empty-lines': OFF
-  , 'no-negated-condition': OFF
-  , 'no-nested-ternary': OFF
-  , 'no-new-object': OFF
-  , 'no-plusplus': OFF
-  , 'no-restricted-syntax': OFF
-  , 'no-tabs': OFF
-  , 'no-ternary': OFF
-  , 'no-trailing-spaces': OFF
-  , 'no-underscore-dangle': OFF
-  , 'no-unneeded-ternary': OFF
-  , 'no-whitespace-before-property': OFF
-  , 'object-curly-newline': OFF
-  , 'object-curly-spacing': OFF
-  , 'object-property-newline': OFF
-  , 'one-var-declaration-per-line': OFF
-  , 'one-var': OFF
-  , 'operator-assignment': OFF
-  , 'operator-linebreak': OFF
-  , 'padded-blocks': OFF
-  , 'quote-props': OFF
-  , quotes: OFF
-  , 'require-jsdoc': OFF
-  , 'semi-spacing': OFF
-  , semi: [ ERROR, ALWAYS ] // TODO: when compiler inserts these automatically re-evaluate this rule
-  , 'sort-keys': OFF
-  , 'sort-vars': OFF
-  , 'space-before-blocks': OFF
-  , 'space-before-function-paren': OFF
-  , 'space-in-parens': OFF
-  , 'space-infix-ops': OFF
-  , 'space-unary-ops': OFF
-  , 'spaced-comment': OFF
-  , 'unicode-bom': OFF
-  , 'wrap-regex': OFF
+  , 'comma-spacing': OFF // TBD
+  , 'comma-style': OFF // TBD
+  , 'computed-property-spacing': OFF // TBD
+  , 'consistent-this': OFF // TBD
+  , 'eol-last': OFF // TBD
+  , 'func-call-spacing': OFF // TBD
+  , 'func-names': OFF // TBD
+  , 'func-style': OFF // TBD
+  , 'id-blacklist': OFF // TBD
+  , 'id-length': OFF // TBD
+  , 'id-match': OFF // TBD
+  , indent: OFF // TBD
+  , 'jsx-quotes': OFF // TBD
+  , 'key-spacing': OFF // TBD
+  , 'keyword-spacing': OFF // TBD
+  , 'line-comment-position': OFF // TBD
+  , 'linebreak-style': OFF // TBD
+  , 'lines-around-comment': OFF // TBD
+  , 'lines-around-directive': OFF // TBD
+  , 'max-depth': OFF // TBD
+  , 'max-len': OFF // TBD
+  , 'max-lines': OFF // TBD
+  , 'max-nested-callbacks': OFF // TBD
+  , 'max-params': OFF // TBD
+  , 'max-statements-per-line': OFF // TBD
+  , 'max-statements': OFF // TBD
+  , 'multiline-ternary': OFF // TBD
+  , 'new-cap': OFF // TBD
+  , 'new-parens': OFF // TBD
+  , 'newline-after-var': OFF // TBD
+  , 'newline-before-return': OFF // TBD
+  , 'newline-per-chained-call': OFF // TBD
+  , 'no-array-constructor': OFF // TBD
+  , 'no-bitwise': OFF // TBD
+  , 'no-continue': OFF // TBD
+  , 'no-inline-comments': OFF // TBD
+  , 'no-lonely-if': OFF // TBD
+  , 'no-mixed-operators': OFF // TBD
+  , 'no-mixed-spaces-and-tabs': OFF // TBD
+  , 'no-multiple-empty-lines': OFF // TBD
+  , 'no-negated-condition': OFF // TBD
+  , 'no-nested-ternary': OFF // TBD
+  , 'no-new-object': OFF // TBD
+  , 'no-plusplus': OFF // TBD
+  , 'no-restricted-syntax': OFF // TBD
+  , 'no-tabs': OFF // TBD
+  , 'no-ternary': OFF // TBD
+  , 'no-trailing-spaces': OFF // TBD
+  , 'no-underscore-dangle': OFF // TBD
+  , 'no-unneeded-ternary': OFF // TBD
+  , 'no-whitespace-before-property': OFF // TBD
+  , 'object-curly-newline': OFF // TBD
+  , 'object-curly-spacing': OFF // TBD
+  , 'object-property-newline': OFF // TBD
+  , 'one-var-declaration-per-line': OFF // TBD
+  , 'one-var': OFF // TBD
+  , 'operator-assignment': OFF // TBD
+  , 'operator-linebreak': OFF // TBD
+  , 'padded-blocks': OFF // TBD
+  , 'quote-props': OFF // TBD
+  , quotes: OFF // TBD
+  , 'require-jsdoc': OFF // TBD
+  , 'semi-spacing': OFF // TBD
+  , semi: [ ERROR, ALWAYS ] // TBD, if compiler inserts these automatically re-evaluate this rule
+  , 'sort-keys': OFF // TBD
+  , 'sort-vars': OFF // TBD
+  , 'space-before-blocks': OFF // TBD
+  , 'space-before-function-paren': OFF // TBD
+  , 'space-in-parens': OFF // TBD
+  , 'space-infix-ops': OFF // TBD
+  , 'space-unary-ops': OFF // TBD
+  , 'spaced-comment': OFF // TBD
+  , 'unicode-bom': OFF // TBD
+  , 'wrap-regex': OFF // TBD
 
-  // ECMAScript 6 TODO': decide later, once supported in apps
-  , 'arrow-body-style': OFF
-  , 'arrow-parens': OFF
-  , 'arrow-spacing': OFF
-  , 'constructor-super': OFF
-  , 'generator-star-spacing': OFF
-  , 'no-class-assign': OFF
-  , 'no-confusing-arrow': OFF
-  , 'no-const-assign': OFF
-  , 'no-dupe-class-members': OFF
-  , 'no-duplicate-imports': OFF
-  , 'no-new-symbol': OFF
-  , 'no-restricted-imports': OFF
-  , 'no-this-before-super': OFF
-  , 'no-useless-computed-key': OFF
-  , 'no-useless-constructor': OFF
-  , 'no-useless-rename': OFF
-  , 'no-var': OFF
-  , 'object-shorthand': OFF
-  , 'prefer-arrow-callback': OFF
-  , 'prefer-const': OFF
-  , 'prefer-numeric-literals': OFF
-  , 'prefer-reflect': OFF
-  , 'prefer-rest-params': OFF
-  , 'prefer-spread': OFF
-  , 'prefer-template': OFF
-  , 'require-yield': OFF
-  , 'rest-spread-spacing': OFF
-  , 'sort-imports': OFF
-  , 'symbol-description': OFF
-  , 'template-curly-spacing': OFF
-  , 'yield-star-spacing': OFF
+  // ECMAScript 6 TODO': decide later, once supported in apps and or override in node projects
+  , 'arrow-body-style': OFF // TBD
+  , 'arrow-parens': OFF // TBD
+  , 'arrow-spacing': OFF // TBD
+  , 'constructor-super': OFF // TBD
+  , 'generator-star-spacing': OFF // TBD
+  , 'no-class-assign': OFF // TBD
+  , 'no-confusing-arrow': OFF // TBD
+  , 'no-const-assign': OFF // TBD
+  , 'no-dupe-class-members': OFF // TBD
+  , 'no-duplicate-imports': OFF // TBD
+  , 'no-new-symbol': OFF // TBD
+  , 'no-restricted-imports': OFF // TBD
+  , 'no-this-before-super': OFF // TBD
+  , 'no-useless-computed-key': OFF // TBD
+  , 'no-useless-constructor': OFF // TBD
+  , 'no-useless-rename': OFF // TBD
+  , 'no-var': OFF // TBD
+  , 'object-shorthand': OFF // TBD
+  , 'prefer-arrow-callback': OFF // TBD
+  , 'prefer-const': OFF // TBD
+  , 'prefer-numeric-literals': OFF // TBD
+  , 'prefer-reflect': OFF // TBD
+  , 'prefer-rest-params': OFF // TBD
+  , 'prefer-spread': OFF // TBD
+  , 'prefer-template': OFF // TBD
+  , 'require-yield': OFF // TBD
+  , 'rest-spread-spacing': OFF // TBD
+  , 'sort-imports': OFF // TBD
+  , 'symbol-description': OFF // TBD
+  , 'template-curly-spacing': OFF // TBD
+  , 'yield-star-spacing': OFF // TBD
   }
 }
