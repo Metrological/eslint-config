@@ -59,7 +59,7 @@ module.exports = {
   // Best Practices
   , 'accessor-pairs': ERROR // TBD
   , 'array-callback-return': ERROR
-  , 'block-scoped-var': OFF
+  , 'block-scoped-var': OFF // TBD
   , 'class-methods-use-this': ERROR // TBD
   , complexity: [ WARN, { max: 20 } ]
   , 'consistent-return': OFF

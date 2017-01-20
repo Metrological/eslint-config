@@ -5,6 +5,8 @@ Configuration files for ESLint
 [![dependencies Status](https://david-dm.org/metrological/eslint-config-metrological/peer-status.svg?style=flat-square)](https://david-dm.org/metrological/eslint-config-metrological)
 [![dependencies Status](https://david-dm.org/metrological/eslint-config-metrological/optional-status.svg?style=flat-square)](https://david-dm.org/metrological/eslint-config-metrological)
 
+[![NSP Status](https://nodesecurity.io/orgs/metrological/projects/c5e5d0fa-8895-4490-b309-3a7cc448aa75/badge)](https://nodesecurity.io/orgs/metrological/projects/c5e5d0fa-8895-4490-b309-3a7cc448aa75)
+
 [![Code Climate](https://codeclimate.com/github/Metrological/eslint-config-metrological/badges/gpa.svg)](https://codeclimate.com/github/Metrological/eslint-config-metrological)
 [![Issue Count](https://codeclimate.com/github/Metrological/eslint-config-metrological/badges/issue_count.svg)](https://codeclimate.com/github/Metrological/eslint-config-metrological)
 
