@@ -5,7 +5,7 @@ const ALWAYS = 'always'
 
 module.exports = {
   parserOptions: {
-    ecmaVersion: 5 // TBD
+    ecmaVersion: 5 // TBD - move to MAF?
   , sourceType: 'script' // TBD
   , ecmaFeatures: {
       globalReturn: false // TBD
@@ -16,8 +16,7 @@ module.exports = {
   }
 , env: {
     browser: true // TBD
-  , node: true // TBD
-  , 'shared-node-browser': true // TBD
+  , 'shared-node-browser': true // TBD - false?
   }
 , rules: {
 
@@ -156,18 +155,6 @@ module.exports = {
   , 'no-unused-vars': WARN
   , 'no-use-before-define': OFF
 
-  // Node.js and CommonJS, TODO: put this in it's own module
-  , 'callback-return': OFF
-  , 'global-require': ERROR // TBD
-  , 'handle-callback-err': OFF
-  , 'no-mixed-requires': OFF
-  , 'no-new-require': ERROR // TBD
-  , 'no-path-concat': ERROR // TBD
-  , 'no-process-env': OFF
-  , 'no-process-exit': ERROR // TBD
-  , 'no-restricted-modules': OFF // TBD
-  , 'no-sync': OFF
-
   // Stylistic Issues TODO: figure this out later with the team
   , 'array-bracket-spacing': OFF // TBD
   , 'block-spacing': OFF // TBD
@@ -250,38 +237,5 @@ module.exports = {
   , 'spaced-comment': OFF // TBD
   , 'unicode-bom': OFF // TBD
   , 'wrap-regex': OFF // TBD
-
-  // ECMAScript 6 TODO': decide later, once supported in apps and or override in node projects
-  , 'arrow-body-style': OFF // TBD
-  , 'arrow-parens': OFF // TBD
-  , 'arrow-spacing': OFF // TBD
-  , 'constructor-super': OFF // TBD
-  , 'generator-star-spacing': OFF // TBD
-  , 'no-class-assign': OFF // TBD
-  , 'no-confusing-arrow': OFF // TBD
-  , 'no-const-assign': OFF // TBD
-  , 'no-dupe-class-members': OFF // TBD
-  , 'no-duplicate-imports': OFF // TBD
-  , 'no-new-symbol': OFF // TBD
-  , 'no-restricted-imports': OFF // TBD
-  , 'no-this-before-super': OFF // TBD
-  , 'no-useless-computed-key': OFF // TBD
-  , 'no-useless-constructor': OFF // TBD
-  , 'no-useless-rename': OFF // TBD
-  , 'no-var': OFF // TBD
-  , 'object-shorthand': OFF // TBD
-  , 'prefer-arrow-callback': OFF // TBD
-  , 'prefer-const': OFF // TBD
-  , 'prefer-numeric-literals': OFF // TBD
-  , 'prefer-reflect': OFF // TBD
-  , 'prefer-rest-params': OFF // TBD
-  , 'prefer-spread': OFF // TBD
-  , 'prefer-template': OFF // TBD
-  , 'require-yield': OFF // TBD
-  , 'rest-spread-spacing': OFF // TBD
-  , 'sort-imports': OFF // TBD
-  , 'symbol-description': OFF // TBD
-  , 'template-curly-spacing': OFF // TBD
-  , 'yield-star-spacing': OFF // TBD
   }
 }
