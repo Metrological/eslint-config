@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-metrological",
-  "version": "1.4.13",
+  "version": "1.4.14",
   "description": "Configuration files for ESLint",
   "keywords": [
     "eslint",
@@ -28,10 +28,10 @@
     "url": "Metrological/eslint-config-metrological"
   },
   "peerDependencies": {
-    "eslint": "3.12.2"
+    "eslint": "3.15.0"
   },
   "engines": {
-    "node": "6.9.2",
-    "npm": "3.10.9"
+    "node": "6.9.5",
+    "npm": "3.10.10"
   }
 }
