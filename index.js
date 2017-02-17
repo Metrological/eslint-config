@@ -132,6 +132,7 @@ module.exports = {
     , location: 'anywhere'
     } ]
   , 'no-with': ERROR // TBD
+  , 'prefer-promise-reject-errors': OFF // TBD
   , radix: OFF
   , 'require-await': OFF // TBD
   , 'vars-on-top': OFF // TBD
@@ -202,6 +203,7 @@ module.exports = {
   , 'no-lonely-if': OFF // TBD
   , 'no-mixed-operators': OFF // TBD
   , 'no-mixed-spaces-and-tabs': OFF // TBD
+  , 'no-multi-assign': OFF // TBD
   , 'no-multiple-empty-lines': OFF // TBD
   , 'no-negated-condition': OFF // TBD
   , 'no-nested-ternary': OFF // TBD
@@ -235,6 +237,7 @@ module.exports = {
   , 'space-infix-ops': OFF // TBD
   , 'space-unary-ops': OFF // TBD
   , 'spaced-comment': OFF // TBD
+  , 'template-tag-spacing': OFF // TBD
   , 'unicode-bom': OFF // TBD
   , 'wrap-regex': OFF // TBD
   }
